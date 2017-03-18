@@ -1,0 +1,13 @@
+<div class="container comment">
+<div *ngFor="let comment of comments" >
+<div>
+    <img src="./../../assets/images/profile.png" alt="comment.username" width="20" height="20">
+  <b>{{comment.username}}</b> : {{comment.content}}
+</div>
+</div>
+
+<div>
+<input #box class="comment-text" placeholder="Write comments" (keyup.enter)="writeComment(box)">
+</div>
+
+</div>

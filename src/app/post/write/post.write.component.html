@@ -1,0 +1,7 @@
+<div class="container">
+<input type="text" class="write-title" name="title" id="title" [(ngModel)]="title"  placeholder="Enter your post title">
+<input type="text" class="write-post" name="post" id="post" [(ngModel)]="post"  placeholder="Share your tips for Alexa users">
+<nav>
+  <a routerLink="/" routerLinkActive="active" class="btn custom-btn btn-md btn-primary btn-flat pull-left"  (click)="writePost()">Post</a>
+</nav>
+</div>

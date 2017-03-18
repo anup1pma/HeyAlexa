@@ -1,0 +1,51 @@
+<div class="text-center">
+<h1>
+<p>Alexa Power Community </p>
+</h1>
+
+</div>
+
+<div *ngFor="let post of posts" >
+<div class="container post">
+<div class="row">
+<div class="col-md-1 col-lg-1">
+  <voter [voteCount]="post.voteCount" [postId]="post.id"  (vote)="onVote($event)"></voter>
+</div>
+<div class="col-md-11 col-lg-11">
+  <div class="post">
+    <div>
+      <b>{{post.title}}</b>
+    </div>
+    <div>
+      <read-more [text]="post.content" [maxLength]="100"></read-more>
+    </div>
+    <div class="tags" *ngFor="let tag of post.tags" >
+      <span class="post-tag">
+        {{tag}}
+      </span>
+    </div>
+    <div class="row">
+    <div class="col-md-8 col-lg-8">
+      <div>
+        <comments [postId] = "post.id" [comments]="getComments(post.id)"></comments>
+      </div>
+    </div>
+    <div class="col-md-4 col-lg-4">
+      <div><i>Shared By: </i></div>
+    <div class="inner-addon left-addon">
+      <img src="./../../assets/images/profile.png" alt="{{post.username}}" width="40" height="60">
+    </div>
+    <div>
+        <b>Name:</b> {{post.username}}
+    </div>
+    <div>
+      <b>Level:</b> {{post.userLevel}}
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+</div>

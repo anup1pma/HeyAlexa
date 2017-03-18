@@ -1,0 +1,50 @@
+.post {
+  margin-bottom: 30px;
+}
+.tags {
+  display: inline-block;
+}
+.post-tag {
+  font-size: 12px;
+  color: #39739d;
+  background-color: #E1ECF4;
+  border-color: transparent;
+  position: relative;
+  display: inline-block;
+  padding: .4em .5em;
+  margin: 2px 2px 2px 0;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0;
+  transition: all .15s ease-in-out;
+}
+.text-left {
+  text-align: left;
+}
+
+/* enable absolute positioning */
+.inner-addon {
+  position: relative;
+}
+
+/* style glyph */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align glyph */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+
+
+body {
+  margin: 10px;
+}

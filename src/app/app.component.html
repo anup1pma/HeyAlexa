@@ -1,3 +1,19 @@
-<h1>
-  {{title}}
-</h1>
+<header>
+<nav class="navbar navbar-inverse">
+  <div class="navbar-header">
+    <a routerLink="/" class="navbar-brand text-center">Hey Alexa</a>
+  </div>
+  <div class="navbar-header pull-right">
+  <a routerLink="/user" class="navbar-brand text-center" routerLinkActive="active">
+    <img src="./../../assets/images/profile.png" alt="Profile" width="30" height="20">
+  </a>
+  </div>
+</nav>
+<div class="container">
+<nav>
+  <a routerLink="/write/post" routerLinkActive="active" class="custom-btn pull-right" >Share your post</a>
+</nav>
+</div>
+</header>
+
+<router-outlet></router-outlet>
